@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "spotify"
+version = "0.1.0"
+description = ""
+authors = ["\"\""]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+spotipy = "^2.23.0"
+python-dotenv = "^1.0.0"
+ruff = "^0.0.291"
+black = "^23.9.1"
+
+[tool.ruff]
+select = ["E", "F", "W", "I"]
+line-length = 100
+target-version = "py311"
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
